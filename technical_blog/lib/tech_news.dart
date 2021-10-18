@@ -6,97 +6,167 @@ class TechNews extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.grey.shade200,
+        backgroundColor: Colors.blue.shade50,
         body: SafeArea(
-          child: Column(
+          child: ListView(
+            padding: const EdgeInsets.all(8),
             children: [
-              SizedBox(
-                height: 20,
-              ),
-              Center(
-                child: Text(
-                  "The Latest",
-                  style: TextStyle(
-                    fontSize: 33,
-                    fontWeight: FontWeight.bold,
-                    letterSpacing: 1.5,
+                SizedBox(
+                  height: 20,
+                ),
+                Center(
+                  child: Text(
+                    "The Latest",
+                    style: TextStyle(
+                      fontSize: 40,
+                      fontWeight: FontWeight.bold,
+                      letterSpacing: 1.5,
+                      fontFamily: 'Serif',
+                    ),
                   ),
                 ),
-              ),
-              SizedBox(
-                height: 20,
-              ),
-              ClipRRect(
-                borderRadius: BorderRadius.circular(25.0),
-                child: Image(
-                    width: 350,
-                    image: AssetImage('assets/images/newspaper.gif')
+                SizedBox(
+                  height: 10,
                 ),
-              ),
-              Text(
-                  "Does the NFT craze actually matter?",
-                    textAlign: TextAlign.left,
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(25.0),
+                  child: Image(
+                      width: 350,
+                      image: AssetImage('assets/images/newspaper.gif')
+                  ),
+                ),
+                Text(
+                    "Does the NFT craze actually matter?",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 25,
+                        fontWeight: FontWeight.bold,
+                        fontFamily: 'Space_Grotesk',
+                      )
+                  ),
+                Text(
+                    "Lucas Matney",
                     style: TextStyle(
-                      fontSize: 25,
+                      fontSize: 15,
+                      fontStyle: FontStyle.italic,
                     )
                 ),
+                const Divider(
+                  height: 20,
+                  thickness: 2,
+                  indent: 20,
+                  endIndent: 20,
+                ),
+                Text(
+                    "What to expect from Apple, Google and Samsung’s big events",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 25,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'Space_Grotesk',
+                    )
+                ),
+                Text(
+                    "Brian Heater",
+                    style: TextStyle(
+                      fontSize: 15,
+                      fontStyle: FontStyle.italic,
+                    )
+                ),
+                const Divider(
+                  height: 20,
+                  thickness: 2,
+                  indent: 20,
+                  endIndent: 20,
+                ),
+                Text(
+                    "GitLab’s mega IPO",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 25,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'Space_Grotesk',
+                    )
+                ),
+                Text(
+                    "Alex Wilhelm",
+                    style: TextStyle(
+                      fontSize: 15,
+                      fontStyle: FontStyle.italic,
+                    )
+                ),
+                const Divider(
+                  height: 20,
+                  thickness: 2,
+                  indent: 20,
+                  endIndent: 20,
+                ),
+                Text(
+                    "Dispute resolution platform Immediation raises 3.6M dollar AUD to expand in the U.S.",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 25,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'Space_Grotesk',
+                    )
+                ),
+                Text(
+                    "Catherine Shu",
+                    style: TextStyle(
+                      fontSize: 15,
+                      fontStyle: FontStyle.italic,
+                    )
+                ),
+                const Divider(
+                  height: 20,
+                  thickness: 2,
+                  indent: 20,
+                  endIndent: 20,
+                ),
+                Text(
+                    "Amazon’s Zoox is expanding autonomous vehicle operations, testing to Seattle",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 25,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'Space_Grotesk',
+                    )
+                ),
+                Text(
+                    "Kirsten Korosec",
+                    style: TextStyle(
+                      fontSize: 15,
+                      fontStyle: FontStyle.italic,
+                    )
+                ),
+                const Divider(
+                  height: 20,
+                  thickness: 2,
+                  indent: 20,
+                  endIndent: 20,
+                ),
               Text(
-                  "Lucas Matney",
+                  "More Latest News Coming Soon!!",
+                  textAlign: TextAlign.center,
                   style: TextStyle(
-                    fontSize: 15,
+                    fontSize: 50,
+                    fontFamily: 'Rampart',
+                    color: Colors.blueAccent,
                   )
               ),
               const Divider(
-                height: 20,
-                thickness: 2,
-                indent: 20,
-                endIndent: 20,
+                  height: 20,
+                  thickness: 4,
+                  indent: 20,
+                  endIndent: 20,
+                  color: Colors.black,
               ),
-              Text(
-                  "What to expect from Apple, Google and Samsung’s big events",
-                  textAlign: TextAlign.left,
-                  style: TextStyle(
-                    fontSize: 25,
-                  )
-              ),
-              Text(
-                  "Brian Heater",
-                  style: TextStyle(
-                    fontSize: 15,
-                  )
-              ),
-              const Divider(
-                height: 20,
-                thickness: 2,
-                indent: 20,
-                endIndent: 20,
-              ),
-              Text(
-                  "GitLab’s mega IPO",
-                  textAlign: TextAlign.left,
-                  style: TextStyle(
-                    fontSize: 25,
-                  )
-              ),
-              Text(
-                  "Alex Wilhelm",
-                  style: TextStyle(
-                    fontSize: 15,
-                  )
-              ),
-              const Divider(
-                height: 20,
-                thickness: 2,
-                indent: 20,
-                endIndent: 20,
-              ),
-            ]
+              ]
+            ),
           )
-        )
-    );
+        );
   }
 }
-
 // launchURL(String url) async {
 //   if (await canLaunch(url)) {
 //     await launch(url, forceWebView: true);
