@@ -47,6 +47,12 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^1.0.0
+  flutter_launcher_icons: "^0.9.0"
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/logo.png"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -63,6 +69,8 @@ flutter:
   assets:
     - assets/images/tech.jpg
     - assets/images/scholar.jpg
+    - assets/images/newspaper.gif
+    - assets/images/scholarship.gif
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
@@ -78,7 +86,23 @@ flutter:
   fonts:
     - family: Oswald
       fonts:
-        - asset: assets/fonts/Oswald-SemiBold.ttf
+        - asset: assets/fonts/Oswald/static/Oswald-SemiBold.ttf
+
+    - family: Orbitron
+      fonts:
+        - asset: assets/fonts/Orbitron/static/Orbitron-Black.ttf
+
+    - family: Serif
+      fonts:
+        - asset: assets/fonts/Serif/DMSerifDisplay-Regular.ttf
+
+    - family: Space_Grotesk
+      fonts:
+        - asset: assets/fonts/Space_Grotesk/static/SpaceGrotesk-SemiBold.ttf
+
+    - family: Rampart
+      fonts:
+        - asset: assets/fonts/Rampart/RampartOne-Regular.ttf
   #       - asset: fonts/Schyler-Regular.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
