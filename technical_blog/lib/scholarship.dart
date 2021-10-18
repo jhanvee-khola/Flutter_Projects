@@ -5,37 +5,45 @@ class Scholarship extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.grey.shade200,
+        backgroundColor: Colors.blue.shade50,
         body: SafeArea(
-            child: Column(
+            child: ListView(
+                padding: const EdgeInsets.all(8),
                 children: [
                   SizedBox(
                     height: 20,
                   ),
                   Center(
                     child: Text(
-                      "The Latest",
+                      "Scholarship Alert!",
                       style: TextStyle(
-                        fontSize: 33,
+                        fontSize: 40,
                         fontWeight: FontWeight.bold,
                         letterSpacing: 1.5,
+                        fontFamily: 'Serif',
                       ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(25.0),
+                    child: Image(
+                        width: 350,
+                        image: AssetImage('assets/images/scholarship.gif')
                     ),
                   ),
                   SizedBox(
                     height: 20,
                   ),
                   Text(
-                      "Does the NFT craze actually matter?",
-                      textAlign: TextAlign.left,
+                      "Google Genration Scholarship",
+                      textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 25,
-                      )
-                  ),
-                  Text(
-                      "Lucas Matney",
-                      style: TextStyle(
-                        fontSize: 15,
+                        fontWeight: FontWeight.bold,
+                        fontFamily: 'Space_Grotesk',
                       )
                   ),
                   const Divider(
@@ -45,16 +53,12 @@ class Scholarship extends StatelessWidget {
                     endIndent: 20,
                   ),
                   Text(
-                      "What to expect from Apple, Google and Samsung’s big events",
-                      textAlign: TextAlign.left,
+                      "Grass Hopper Celebration India(GHCI)",
+                      textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 25,
-                      )
-                  ),
-                  Text(
-                      "Brian Heater",
-                      style: TextStyle(
-                        fontSize: 15,
+                        fontWeight: FontWeight.bold,
+                        fontFamily: 'Space_Grotesk',
                       )
                   ),
                   const Divider(
@@ -64,16 +68,12 @@ class Scholarship extends StatelessWidget {
                     endIndent: 20,
                   ),
                   Text(
-                      "GitLab’s mega IPO",
-                      textAlign: TextAlign.left,
+                      "Nutanix Wit Scholarship",
+                      textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 25,
-                      )
-                  ),
-                  Text(
-                      "Alex Wilhelm",
-                      style: TextStyle(
-                        fontSize: 15,
+                        fontWeight: FontWeight.bold,
+                        fontFamily: 'Space_Grotesk',
                       )
                   ),
                   const Divider(
@@ -81,6 +81,52 @@ class Scholarship extends StatelessWidget {
                     thickness: 2,
                     indent: 20,
                     endIndent: 20,
+                  ),
+                  Text(
+                      "Google Talentsprint Women Engineers(WE) Program",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 25,
+                        fontWeight: FontWeight.bold,
+                        fontFamily: 'Space_Grotesk',
+                      )
+                  ),
+                  const Divider(
+                    height: 20,
+                    thickness: 2,
+                    indent: 20,
+                    endIndent: 20,
+                  ),
+                  Text(
+                      "Google Conference and Travel Scholarship",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 25,
+                        fontWeight: FontWeight.bold,
+                        fontFamily: 'Space_Grotesk',
+                      )
+                  ),
+                  const Divider(
+                    height: 20,
+                    thickness: 2,
+                    indent: 20,
+                    endIndent: 20,
+                  ),
+                  Text(
+                      "Go Get these Scholarships!!",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 50,
+                        fontFamily: 'Rampart',
+                        color: Colors.blueAccent,
+                      )
+                  ),
+                  const Divider(
+                    height: 20,
+                    thickness: 4,
+                    indent: 20,
+                    endIndent: 20,
+                    color: Colors.black,
                   ),
                 ]
             )
