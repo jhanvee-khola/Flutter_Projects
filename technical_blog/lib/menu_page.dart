@@ -20,6 +20,7 @@ class MenuPage extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                     letterSpacing: 1.5,
+                    fontFamily: 'Oswald',
                   ),
                 ),
               ),
