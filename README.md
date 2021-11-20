@@ -1,6 +1,6 @@
 # GDSC_Flutter
 
-## Task-1 : Technical Blog App
+## 1. Technical Blog App
 
 Reference Screenshots --
 
