@@ -1,6 +1,4 @@
-# GDSC_Flutter
-
-## 1. Technical Blog App
+# Technical Blog App
 
 Reference Screenshots --
 
